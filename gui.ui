@@ -27,6 +27,21 @@
      <string>ПОЙТИ НАХУЙ</string>
     </property>
    </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Авто или не авто</string>
+    </property>
+   </widget>
+   <zorder>radioButton</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -37,8 +52,33 @@
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Что писать то</string>
+    </property>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_4"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_2">
+   <property name="text">
+    <string>Лол</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>КЕК</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>не кек</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
