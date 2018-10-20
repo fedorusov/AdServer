@@ -94,12 +94,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.betaStep)
         self.gridLayout.addLayout(self.horizontalLayout, 3, 1, 1, 1)
         self.verticalLayout.addLayout(self.gridLayout)
-        self.pushButton = QtWidgets.QPushButton(self.layoutWidget)
+        self.calculateButton = QtWidgets.QPushButton(self.layoutWidget)
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.pushButton.setFont(font)
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout.addWidget(self.pushButton)
+        self.calculateButton.setFont(font)
+        self.calculateButton.setObjectName("calculateButton")
+        self.verticalLayout.addWidget(self.calculateButton)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
@@ -111,7 +111,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        MainWindow.setTabOrder(self.checkBox, self.pushButton)
+        MainWindow.setTabOrder(self.checkBox, self.calculateButton)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -127,7 +127,7 @@ class Ui_MainWindow(object):
         self.X0Input.setPlaceholderText(_translate("MainWindow", "X0"))
         self.betaRInput.setPlaceholderText(_translate("MainWindow", "Right border"))
         self.betaStep.setPlaceholderText(_translate("MainWindow", "Step"))
-        self.pushButton.setText(_translate("MainWindow", "Calculate"))
+        self.calculateButton.setText(_translate("MainWindow", "Calculate"))
 
 
 if __name__ == "__main__":

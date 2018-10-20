@@ -180,7 +180,7 @@
       </layout>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="calculateButton">
        <property name="font">
         <font>
          <pointsize>14</pointsize>
@@ -208,7 +208,7 @@
  </widget>
  <tabstops>
   <tabstop>checkBox</tabstop>
-  <tabstop>pushButton</tabstop>
+  <tabstop>calculateButton</tabstop>
  </tabstops>
  <resources/>
  <connections/>
