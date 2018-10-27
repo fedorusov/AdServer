@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from wrapped_gui import W_Ui_MainWindow
+from wrapped_gui import Gui
 import sys
 
 def main():
@@ -9,6 +9,6 @@ def main():
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    W_ui = W_Ui_MainWindow(MainWindow)
+    Gui = Gui(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
